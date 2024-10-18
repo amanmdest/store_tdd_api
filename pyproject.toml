@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "store_tdd_api"
+version = "0.0.1"
+description = "API de produtos com TDD e MongoDB"
+authors = ["amanmdest <amanmdest@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+uvicorn = "^0.31.0"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.5.2"
+motor = "^3.6.0"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+pre-commit = "^4.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
