@@ -10,13 +10,13 @@ def test_schemas_return_success():
     data = product_data()
     product = ProductIn.model_validate(data)
 
-    assert product.name == "Iphone 14 pro Max"
+    assert product.name == "Iphone 14 Pro Max"
     assert isinstance(product.id, UUID)
 
 
 def test_schemas_return_raise():
     data = {
-        "name": "Iphone 14 pro Max",
+        "name": "Iphone 14 Pro Max",
         "quantity": "10",
         "price": "8500",
     }
@@ -28,7 +28,7 @@ def test_schemas_return_raise():
         "loc": ("status",),
         "msg": "Field required",
         "input": {
-            "name": "Iphone 14 pro Max",
+            "name": "Iphone 14 Pro Max",
             "quantity": "10",
             "price": "8500",
         },
