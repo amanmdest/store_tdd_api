@@ -7,4 +7,4 @@ class BaseException(Exception):
 
 
 class NotFoundException(BaseException):
-    message = f'Product not found with filter: "{id}"'
+    message = f"Product not found with filter: {id}"

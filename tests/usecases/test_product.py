@@ -31,7 +31,7 @@ async def test_usecases_get_should_return_not_found():
 
     assert (
         err.value.message
-        == 'Product not found with filter: "f8827cf6-d5cf-4dfd-8790-fc83aec54315"'
+        == "Product not found with filter: f8827cf6-d5cf-4dfd-8790-fc83aec54315"
     )
 
 
@@ -48,7 +48,7 @@ async def test_usecases_query_should_return_success():
 async def test_usecases_update_should_return_success(
     product_up, product_inserted
 ):
-    product_up.price = 7.500
+    product_up.price = "7.500"
     result = await product_usecase.update(
         id=product_inserted.id, body=product_up
     )
